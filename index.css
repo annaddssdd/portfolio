@@ -1,0 +1,176 @@
+body {
+	text-align: center;
+	font-family: 'Inconsolata', monospace;
+	margin: 3em;
+}
+
+h1 {
+	font-family: 'Nunito', sans-serif;
+	font-style: black;
+	font-size: 400%;
+	color: black;
+	letter-spacing: 8px;
+	margin: 0;
+	padding-bottom: 3px;
+}
+
+h2 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 150%;
+	color: black;
+	letter-spacing: 3px;
+}
+
+p {
+	font-size:100%;
+	color: black;
+}
+
+img {
+	width:40%;
+	height:40%;
+	min-width: 250px;
+	max-width: 80%;
+	padding-top: 2em;
+}
+
+a{
+    color: black;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.active {
+	color: #FFF303;
+	cursor: default;
+}
+
+a:hover:not(.active) {
+    color: black;
+	background: yellow;
+}
+
+a:active {
+    color: white;
+}
+
+.row {
+	padding-top: 10px;
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+	float: left;
+	width: 20%;
+	position: relative;
+    text-align: center;
+}
+
+.column:hover {
+	color: #FFF303;
+	cursor: pointer;
+}
+
+.column img:hover {
+	opacity: 0.3;
+}
+
+.centered {
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding-top: 2em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center {
+	text-align: center;
+	color: black;
+    position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+.column:hover .center{
+	visibility: visible;
+}
+
+#illustrations {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+	display: none;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+	padding-top: 2em;
+}
+
+#animations{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+	display: none;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+	padding-top: 2em;
+}
+
+#university{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+	display: none;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+	padding-top: 2em;
+}
+
+
+#beca{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+	display: none;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+	padding-top: 2em;
+}
+
+#accreditron{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+	display: none;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+	padding-top: 2em;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 30px;
+    right: 30px;
+    z-index: 99; 
+	background-color: yellow;
+	border: none;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px; 
+}
+
+#myBtn:hover {
+    color: white;
+}
