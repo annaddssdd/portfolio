@@ -11,7 +11,7 @@ h1 {
 	color: black;
 	letter-spacing: 8px;
 	margin: 0;
-	padding-bottom: 3px;
+	padding-bottom: 0px;
 }
 
 h2 {
@@ -27,8 +27,8 @@ p {
 }
 
 img {
-	width:40%;
-	height:40%;
+	width:37%;
+	height:37%;
 	min-width: 250px;
 	max-width: 80%;
 	padding-top: 2em;
@@ -87,7 +87,7 @@ a:active {
 	font-size: 20px;
 	letter-spacing: 2px;
 	padding-top: 2em;
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -173,4 +173,12 @@ a:active {
 
 #myBtn:hover {
     color: white;
+}
+
+@media (max-width: @screen-xs) {
+    .column{width: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    .column{width: 14px;}
 }
