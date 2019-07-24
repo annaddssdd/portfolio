@@ -27,11 +27,14 @@ p {
 }
 
 img {
-	width:37%;
-	height:37%;
-	min-width: 250px;
-	max-width: 80%;
-	padding-top: 2em;
+	min-width: 300px;
+	max-width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 80%;
+  }
 }
 
 a{
@@ -54,32 +57,79 @@ a:active {
     color: white;
 }
 
+
+.container {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  margin:auto;
+}
+
+.image {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color:yellow;
+}
+
+.container:hover .overlay {
+  opacity: .8;
+  cursor:pointer;
+}
+
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+@media (max-width: @screen-xs) {
+    .container{width: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    .container{width: 14px;}
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 70%;
+  }
+}
+
+
+
+
 .row {
 	padding-top: 10px;
-	margin-left: 4em;
-	margin-right: 4em;
+	margin:auto;
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
-}
-
-.column{
-	float: left;
-	width: 20%;
-	position: relative;
-    text-align: center;
-}
-
-.column:hover {
-	color: #FFF303;
-	cursor: pointer;
-}
-
-.column img:hover {
-	opacity: 0.3;
 }
 
 .centered {
@@ -102,11 +152,7 @@ a:active {
 	visibility: hidden;
 }
 
-.column:hover .center{
-	visibility: visible;
-}
-
-#illustrations {
+#graphics {
     display: -ms-flexbox; /* IE10 */
     display: flex;
 	display: none;
@@ -115,6 +161,7 @@ a:active {
     padding: 0 4px;
 	padding-top: 2em;
 }
+
 
 #animations{
     display: -ms-flexbox; /* IE10 */
@@ -126,42 +173,12 @@ a:active {
 	padding-top: 2em;
 }
 
-#university{
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-	display: none;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-	padding-top: 2em;
-}
-
-
-#beca{
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-	display: none;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-	padding-top: 2em;
-}
-
-#accreditron{
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-	display: none;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-	padding-top: 2em;
-}
 
 #myBtn {
     display: none; 
     position: fixed; 
     bottom: 30px;
-    right: 30px;
+    right: 70px;
     z-index: 99; 
 	background-color: yellow;
 	border: none;
@@ -175,10 +192,3 @@ a:active {
     color: white;
 }
 
-@media (max-width: @screen-xs) {
-    .column{width: 10px;}
-}
-
-@media (max-width: @screen-sm) {
-    .column{width: 14px;}
-}
